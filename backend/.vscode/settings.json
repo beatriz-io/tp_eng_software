@@ -1,0 +1,23 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "demandas_tp",
+            "database": "${workspaceFolder:backend}/src/main/resources/db/test_tb.db"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "PGSQL",
+            "database": "demandas",
+            "username": "postgres",
+            "password": ""
+        }
+    ],
+    "sqltools.useNodeRuntime": true,
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -javaagent:\"/Users/beatrizinaciodeoliveira/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\""
+}
