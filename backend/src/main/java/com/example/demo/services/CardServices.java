@@ -22,7 +22,7 @@ public class CardServices extends WithAuthentication {
 
     public Card create(Card card) {
         UserAccount owner = getUserAccount();
-        if (!owner.getRole().equals("Cliente")) {
+        if (!(owner.getRole().equals("Cliente") || (owner.getRole().equals("Desenvolvedor")))) {
             throw new IllegalArgumentException("Apenas Clientes podem criar cards");
         }
         Card _card = Card.builder().title(card.getTitle())
